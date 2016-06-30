@@ -14,14 +14,12 @@
         </svg>
       </a>
     -->
-
-
     <div class="user-avatar">
       {% if site.username %}
       {% include icon-user.html username=site.username %}
       {% endif %}
     </div>
-
+    
     <div class="trigger">
       {% for my_page in site.pages %}
       {% if my_page.title %}
