@@ -114,6 +114,7 @@
 .footer-social {
     display: table;
     margin: 0 auto;
+    margin-top: 10px;
     .icon-link{
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -158,8 +159,6 @@
     display: block;
     font-size: 24px;
 }
-
-
 
 /**
  * Posts
