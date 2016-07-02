@@ -190,11 +190,12 @@
     position: relative;
     margin-left: 4px;
     margin-right: 4px;
+    height: 100px
 
     .post-info-date {
         position: absolute;
         bottom: 0;
-        float: right;
+        right: 0;
         font-size: $small-font-size;
         color: $grey-color;
     }
