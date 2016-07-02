@@ -139,12 +139,10 @@
 
 .post-image-container {
   position: relative;
-  width: 250px;
-  height: 250px;  
 }
 .crop {
     position: absolute;
-    clip: rect(156px 750px 406px auto);
+    clip: rect(156px 750px 406px 500px);
   }
 
 /**
