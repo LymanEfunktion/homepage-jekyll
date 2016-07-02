@@ -186,6 +186,17 @@
     color: $grey-color;
 }
 
+.post-info {
+    margin-left: 4px;
+    margin-right: 4px;
+
+    .post-info-date {
+        float: right;
+        font-size: $small-font-size;
+        color: $grey-color;
+    }
+}
+
 .post-link {
     display: block;
     font-size: 24px;

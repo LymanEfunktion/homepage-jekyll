@@ -6,12 +6,14 @@ layout: default
   <div class="post-list">
     {% for post in site.posts offset: 0 limit: 3 %}
     <div class="post">
-      <a class="fill-parent" href="{{ post.url | prepend: site.baseurl }}"></a>
       <div class="post-image-container">
         <img class="crop" src="/images/post_1.jpg"/>
+        <a class="fill-parent" href="{{ post.url | prepend: site.baseurl }}"></a>
       </div>
-      <p class="post-link">{{ post.title }}</p>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <div class="post-info">
+        <p class="post-link">{{ post.title }}</p>
+        <span class="post-info-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </div>
     </div>
     {% endfor %}
   </div>
