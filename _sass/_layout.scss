@@ -146,20 +146,8 @@
   margin-bottom: .3em;
 
   .crop {
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    img {
-        display: block;
-        min-width: 100%;
-        min-height: 100%;
-        margin: auto;
-        position: absolute;
-        top: -100%;
-        right: -100%;
-        bottom: -100%;
-        left: -100%;
-    }
+    position: absolute;
+    clip: rect(156px,750px,406px,500px);
   }
 }
 
