@@ -140,15 +140,12 @@
 .post-image-container {
   position: relative;
   width: 250px;
-  height: 250px;
-
-  .crop {
+  height: 250px;  
+}
+.crop {
     position: absolute;
-    visibility:hidden;
     clip: rect(156px 750px 406px auto);
   }
-}
-
 
 /**
  * Page content
