@@ -3,6 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
+    top: 10px;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -25,7 +26,8 @@
 }
 
 .site-nav {
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 56px;
 
     .menu-icon {
