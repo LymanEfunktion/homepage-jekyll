@@ -6,7 +6,7 @@ layout: default
   <div class="post-list">
     {% for post in site.posts offset: 0 limit: 3 %}
     <div>
-      <img src="/images/post_1.jpg">
+      <img src="/images/post_1.jpg" style="width:300;height:250px;">
       <a class="fill-parent" href="{{ post.url | prepend: site.baseurl }}"></a>
       <p class="post-link">{{ post.title }}</p>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
