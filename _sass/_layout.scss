@@ -70,20 +70,27 @@
     }
 }
 
-.user-avatar {
-    width: 300px;
-    height: 300px;
+@mixin round-image-radius($imageUrl, $radius, $shadow) {
+    width: $radius * 2;
+    height: $radius * 2;
     margin-left: auto;
-    margin-top: 10px; 
     margin-right: auto;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url("/images/me.png") no-repeat;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    background: $imageUrl no-repeat;
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+    -webkit-box-shadow: 0 0 $shadow rgba(0, 0, 0, .8);
+       -moz-box-shadow: 0 0 $shadow rgba(0, 0, 0, .8);
+        -ms-box-shadow: 0 0 $shadow rgba(0, 0, 0, .8);
+            box-shadow: 0 0 $shadow rgba(0, 0, 0, .8);
 }
+
+.user-avatar {
+    @include round-image-radius(url("/images/me.png"),125px, 8px);
+    margin-top: 10px;
+}
+
 
 .fill-parent {
     display: block;
