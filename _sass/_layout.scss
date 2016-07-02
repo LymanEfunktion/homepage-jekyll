@@ -124,6 +124,11 @@
     padding-left: $spacing-unit / 2;
 }
 
+.footer-copyright {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
 .footer-col-1 {
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
     width:         calc(35% - (#{$spacing-unit} / 2));
