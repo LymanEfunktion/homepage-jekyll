@@ -141,13 +141,11 @@
   position: relative;
   width: 250px;
   height: 250px;
-  vertical-align: top;
-  margin-right: .5em;
-  margin-bottom: .3em;
 
   .crop {
     position: absolute;
-    clip: rect(156px,750px,406px,500px);
+    visibility:hidden;
+    clip: rect(156px 750px 406px auto);
   }
 }
 
