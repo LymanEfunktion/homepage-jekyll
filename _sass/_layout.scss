@@ -138,12 +138,30 @@
 }
 
 .post-image-container {
-  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
 }
+
 .crop {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  
+  img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
     position: absolute;
-    clip: rect($height/4  $width*4/3 $height*3/4 $width/4);
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
   }
+}
 
 /**
  * Page content
