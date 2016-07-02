@@ -142,7 +142,7 @@
 }
 .crop {
     position: absolute;
-    clip: rect(156px 750px 406px 500px);
+    clip: rect($height/4  $width*4/3 $height*3/4 $width/4);
   }
 
 /**
