@@ -111,6 +111,16 @@
     margin-left: 0;
 }
 
+.footer-social {
+
+    .icon-link{
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+
 .footer-copyright {
     font-size: $small-font-size;
     color: $grey-color;
