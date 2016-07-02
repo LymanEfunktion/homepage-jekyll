@@ -2,8 +2,7 @@
  * Site header
  */
 .site-header {
-    top: 5px solid $grey-color-dark;
-    border-top: 10px ;
+    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -26,8 +25,7 @@
 }
 
 .site-nav {
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
     line-height: 56px;
 
     .menu-icon {
@@ -53,26 +51,9 @@
         border-radius: 5px;
         text-align: right;
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
         .trigger {
+            margin-left: auto;
+            margin-right: auto;
             clear: both;
             display: none;
         }
@@ -95,6 +76,7 @@
 }
 
 .user-avatar {
+    top: 5px;
     width: 300px;
     height: 300px;
     margin-left: auto;
