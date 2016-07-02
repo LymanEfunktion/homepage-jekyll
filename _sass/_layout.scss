@@ -75,7 +75,7 @@
     height: $radius * 2;
     margin-left: auto;
     margin-right: auto;
-    background: $imageUrl no-repeat;
+    background: url($imageUrl) no-repeat;
     -webkit-border-radius: $radius;
        -moz-border-radius: $radius;
         -ms-border-radius: $radius;
@@ -87,7 +87,7 @@
 }
 
 .user-avatar {
-    @include round-image-radius(url("/images/me.png"),125px, 8px);
+    @include round-image-radius("/images/me.png", 125px, 8px);
     margin-top: 10px;
 }
 
