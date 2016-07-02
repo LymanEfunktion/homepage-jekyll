@@ -52,10 +52,9 @@
         text-align: right;
 
         .trigger {
-            margin-left: auto;
-            margin-right: auto;
             clear: both;
-            display: none;
+            display: table;
+            margin: 0 auto;
         }
 
         &:hover .trigger {
@@ -76,7 +75,6 @@
 }
 
 .user-avatar {
-    top: 5px;
     width: 300px;
     height: 300px;
     margin-left: auto;
