@@ -187,10 +187,13 @@
 }
 
 .post-info {
+    position: relative;
     margin-left: 4px;
     margin-right: 4px;
 
     .post-info-date {
+        position: absolute;
+        bottom: 0;
         float: right;
         font-size: $small-font-size;
         color: $grey-color;
