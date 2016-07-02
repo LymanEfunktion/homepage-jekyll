@@ -9,9 +9,6 @@ layout: default
       <div class="crop">
         <img src="/images/post_1.jpg"/>
       </div>
-      <a class="fill-parent" href="{{ post.url | prepend: site.baseurl }}"></a>
-      <p class="post-link">{{ post.title }}</p>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     </div>
     {% endfor %}
   </div>
