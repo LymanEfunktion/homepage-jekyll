@@ -104,6 +104,13 @@
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
+.fill-parent {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
 /**
  * Site footer
  */
