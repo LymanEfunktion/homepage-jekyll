@@ -165,6 +165,13 @@
     height: 350px;
 }
 
+.more-posts {
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+    }
+}
 /**
  * Page content
  */
