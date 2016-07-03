@@ -7,7 +7,7 @@ layout: default
     {% for post in site.posts offset: 0 limit: 3 %}
     <div class="post">
       <div class="post-image-container">
-        <img class="crop" src="/images/post_1.jpg"/>
+        <img class="crop" src="{{ post.image }}"/>
         <a class="fill-parent" href="{{ post.url | prepend: site.baseurl }}"></a>
       </div>
       <div class="post-info">
@@ -16,5 +16,11 @@ layout: default
       </div>
     </div>
     {% endfor %}
+    <div class="more-posts">
+      <pre class="page-link">
+        READ
+        MORE
+        POSTS</pre>
+    </div>
   </div>
 </div>
