@@ -160,12 +160,15 @@
 }
 
 .post {
+    display: inline-block;
+    margin-right: 6px;
     @include shadow(4px);
     width: 250px;
     height: 350px;
 }
 
 .more-posts {
+    float: right;
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -183,9 +186,7 @@
 }
 
 .post-list {
-    margin-left: 0;
-    display: inline-block;
-    margin: 0 auto;
+    text-align: center;
     list-style: none;
 }
 
