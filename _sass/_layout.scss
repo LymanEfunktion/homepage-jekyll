@@ -166,7 +166,6 @@
 }
 
 .more-posts {
-
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -185,7 +184,7 @@
 
 .post-list {
     margin-left: 0;
-    display: table;
+    display: inline-block;
     margin: 0 auto;
     list-style: none;
 }
