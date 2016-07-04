@@ -3,11 +3,11 @@ layout: default
 ---
 
 <div class="home">
-  <div class="post-list">
+  <div class="post-cards">
     {% for post in site.posts offset: 0 limit: 3 %}
-    <div class="post">
-      <div class="post-image-container">
-        <img class="crop" src="{{ post.image }}"/>
+    <div class="post-card">
+      <div class="post-card-image-container">
+        <img class="post-card-image" src="{{ post.image }}"/>
         <a class="fill-parent" href="{{ post.url | prepend: site.baseurl }}"></a>
       </div>
       <div class="post-info">
