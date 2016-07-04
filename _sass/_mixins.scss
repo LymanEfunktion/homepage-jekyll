@@ -1,4 +1,4 @@
-@mixin round-corners($values) {
+@mixin round-corners($values...) {
 	-webkit-border-radius: $values;
 	-moz-border-radius: $values;
 	-ms-border-radius: $values;
