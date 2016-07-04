@@ -63,10 +63,8 @@
 	}
 }
 
-.icon-link {
-	:hover {
-		text-decoration: underline;
-	}
+.icon-link, .icon-link:hover  {
+	text-decoration: underline;
 }
 
 .site-footer-copyright {
