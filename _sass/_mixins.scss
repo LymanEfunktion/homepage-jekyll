@@ -1,13 +1,6 @@
-@mixin round-corners($radius) {
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-	-ms-border-radius: $radius;
-	border-radius: $radius;
-}
-
-@mixin round-corners($left-top, $right-top, $left-bot, $rigth-bot) {
-	-webkit-border-radius: $left-top, $right-top, $left-bot, $rigth-bot;
-	-moz-border-radius: $left-top, $right-top, $left-bot, $rigth-bot;
-	-ms-border-radius: $left-top, $right-top, $left-bot, $rigth-bot;
-	border-radius: $left-top, $right-top, $left-bot, $rigth-bot;
+@mixin round-corners($values) {
+	-webkit-border-radius: $values;
+	-moz-border-radius: $values;
+	-ms-border-radius: $values;
+	border-radius: $values;
 }
