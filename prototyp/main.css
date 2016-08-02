@@ -199,6 +199,13 @@ a.page-link:hover {
   margin-bottom: 10px;
 }
 
+.user-avatar:hover {
+  -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 0 9px rgba(0, 0, 0, 1);
+  -ms-box-shadow: 0 0 9px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 9px rgba(0, 0, 0, 1);
+}
+
 .post-info-title {
   color: black;
   margin-top: 16px;
