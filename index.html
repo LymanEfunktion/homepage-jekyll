@@ -2,22 +2,21 @@
 layout: default
 ---
 
-<div class="home">
-  <div class="post-cards">
-    {% for post in site.posts offset: 0 limit: 3 %}
-    <div class="post-card">
-      <div class="post-card-image-container">
-        <img class="post-card-image" src="{{ post.image }}"/>
-        <a class="fill-parent" href="{{ post.url | prepend: site.baseurl }}"></a>
-      </div>
-      <div class="post-info">
-        <p class="post-link">{{ post.title }}</p>
-        <span class="post-info-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </div>
+<div class="site-home">
+  {% for post in site.posts offset: 0 limit: 3 %}
+  <a class="post" href="/jekyll/update/2016/06/26/welcome-to-jekyll.html">
+    <div class="post-image-container">
+      <img class="crop" src="{{ post.image }}">
     </div>
-    {% endfor %}
-    <div class="more-posts">
-      <a class="page-link" href="{{ / | prepend: site.baseurl }}">READ<br>MORE<br>POSTS</a>
+    <div class="post-info">
+      <div class="post-info-title">{{ post.title }}</div>
+      <div class="post-info-date">{{ post.date | date: "%b %-d, %Y" }}</div>
     </div>
-  </div>
+  </a>
+  {% endfor %}
 </div>
+<aside class="aside">
+  <a class="read-more page-link" href="{{ / | prepend: site.baseurl }}">
+    READ <br class="newline">MORE <br class="newline">POSTS
+  </a>
+</aside>
